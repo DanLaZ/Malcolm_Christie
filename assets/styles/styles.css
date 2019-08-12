@@ -1,0 +1,19 @@
+.carouselStyle {
+    background-color: blue;
+}
+
+.artSize {
+    height: 100px;
+    width: 100px;
+}
+
+.carousel-item {
+    margin: 0px;
+    height: 200px;
+    width: 200px;
+}
+
+.w-100 {
+    height: 100px;
+    width: 100px;
+}
