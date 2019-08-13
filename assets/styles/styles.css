@@ -1,19 +1,13 @@
-.carouselStyle {
-    background-color: blue;
+body {
+    background-color: black;
+    
 }
 
-.artSize {
-    height: 100px;
-    width: 100px;
+
+img {
+    height: 400px;
+    width: 400px;
+    
 }
 
-.carousel-item {
-    margin: 0px;
-    height: 200px;
-    width: 200px;
-}
 
-.w-100 {
-    height: 100px;
-    width: 100px;
-}
