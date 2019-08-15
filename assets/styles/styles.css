@@ -7,21 +7,31 @@ html {
 }
 
 body {
-    background-color: black; 
+    background-color: white; 
     margin-bottom: 40px;
     transition: 0.3s all;  
 }
 
 .changeColor {
-    background: white;
+    background: black;
 }
 
 
 .artPic {
     height: 250px;
     width: 250px; 
-    margin-bottom: 10px; 
-    margin-left: 10px; 
+    margin: 10px; 
+    margin-left: 20px; 
+    border-style: solid;
+    border-color: #42611F;
+    border-width: 10px; 
+}
+
+.artPic:hover {
+    color: #fff;
+    border-color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .grid-1 {
@@ -31,6 +41,22 @@ body {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   object-fit: cover;
+}
+
+#mainHeader {
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    margin-top: 10px;
+    text-shadow: 4px 4px 4px #42611F, -4px 4px 4px #42611F, 4px 4px 4px #42611F, -4px 4px 4px #42611F;
+}
+
+#mainHeader:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border-bottom: 20px double #42611F;
 }
 
 
@@ -53,8 +79,13 @@ body {
     margin: auto;
 }
 
-nav {
+.navbar {
     min-width: 100%;
+    background-color: black; 
+}
+
+.h-font {
+    color: white;
 }
 
 footer {
