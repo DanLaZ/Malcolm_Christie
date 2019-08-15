@@ -1,13 +1,53 @@
+html {
+    position: relative;
+    /*for sticky footer */
+    min-height: 100%;
+    /*for sticky footer */
+    min-width: 100%;
+}
+
 body {
-    background-color: black;
-    
+    background-color: black; 
+    margin-bottom: 40px;
+    transition: 0.3s all;  
+}
+
+.changeColor {
+    background: white;
 }
 
 
-img {
-    height: 400px;
-    width: 400px;
-    
+.artPic {
+    height: 300px;
+    width: 300px; 
+    margin: 10px 20px;  
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
 }
 
 
+.displayNone {
+    display: none;
+}
+
+.dl-wrapper {
+    text-align: center;
+}
+
+.dl-container {
+    margin: auto;
+    padding: 0px;
+}
+
+.ks-container {
+    display: inline-block;
+}
+
+.dl-container {
+
+}
