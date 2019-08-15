@@ -40,8 +40,7 @@ body {
 }
 
 .dl-container {
-    margin: auto;
-    padding: 0px;
+    align-items: center;
 }
 
 .ks-container {
@@ -49,5 +48,25 @@ body {
 }
 
 .dl-container {
+    justify-content: center
+}
 
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /*vertically centers */
+}
+
+.footerText {
+    color: white;
+    font-size: 12px;
+}
+
+.main {
+    margin-top: 78px;
+    margin-bottom: 78px;
 }
