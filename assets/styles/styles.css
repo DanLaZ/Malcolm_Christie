@@ -48,7 +48,10 @@ body {
 }
 
 .dl-container {
-    justify-content: center
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
 }
 
 footer {
@@ -67,6 +70,6 @@ footer {
 }
 
 .main {
-    margin-top: 78px;
-    margin-bottom: 78px;
+    /* margin-top: 78px;
+    margin-bottom: 78px; */
 }
