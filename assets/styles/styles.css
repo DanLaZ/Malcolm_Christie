@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: white; 
+    background-color: floralwhite; 
     margin-bottom: 40px;
     transition: 0.3s all;  
 }
@@ -22,16 +22,16 @@ body {
     width: 250px; 
     margin: 10px; 
     margin-left: 20px; 
-    border-style: solid;
-    border-color: #42611F;
-    border-width: 10px; 
+    border-width: 10px;
+    border-style: ridge;
+    border-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 10px 10px 5px grey;
 }
 
 .artPic:hover {
-    color: #fff;
-    border-color: white;
     text-decoration: none;
     cursor: pointer;
+   
 }
 
 .grid-1 {
@@ -48,7 +48,7 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-size: 100px;
     margin-top: 10px;
-    text-shadow: 4px 4px 4px #42611F, -4px 4px 4px #42611F, 4px 4px 4px #42611F, -4px 4px 4px #42611F;
+    text-shadow: 4px 4px 4px grey, -4px 4px 4px grey, 4px 4px 4px grey, -4px 4px 4px grey;
 }
 
 #mainHeader:after {
@@ -56,7 +56,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 75%;
-    border-bottom: 20px double #42611F;
+    border-bottom: 20px double rgba(255, 255, 255, 0.5);
 }
 
 
@@ -81,15 +81,15 @@ body {
 
 .navbar {
     min-width: 100%;
-    background-color: black; 
+    background-color: rgba(255, 255, 255, 0.9); 
 }
 
 .h-font {
-    color: white;
+    color: black;
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0;
     width: 100%;
