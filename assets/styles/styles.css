@@ -43,6 +43,12 @@ body {
   object-fit: cover;
 }
 
+@media(min-width: 1600px) {
+    .grid-1 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 #mainHeader {
     color: black;
     font-family: 'Permanent Marker', cursive;
@@ -101,9 +107,4 @@ footer {
 .footerText {
     color: white;
     font-size: 12px;
-}
-
-.main {
-    /* margin-top: 78px;
-    margin-bottom: 78px; */
 }
