@@ -1,76 +1,24 @@
+/*General Styles*/
+/*=============================*/
 html {
     position: relative;
-    /*for sticky footer */
     min-height: 100%;
-    /*for sticky footer */
     min-width: 100%;
 }
 
 body {
-    background-color: floralwhite; 
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank  you! */
     margin-bottom: 40px;
-    transition: 0.3s all;  
 }
-
-.changeColor {
-    background: black;
-}
-
-
-.artPic {
-    height: 250px;
-    width: 250px; 
-    margin: 10px; 
-    margin-left: 20px; 
-    border-width: 10px;
-    border-style: ridge;
-    border-color: rgba(255, 255, 255, 0.5); 
-    box-shadow: 10px 10px 5px grey;
-}
-
-.artPic:hover {
-    text-decoration: none;
-    cursor: pointer;
-   
-}
-
-.grid-1 {
-  display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  object-fit: cover;
-}
-
-@media(min-width: 1600px) {
-    .grid-1 {
-        grid-template-columns: repeat(5, 1fr);
-        margin-left: 60px;
-    }
-}
-
-#mainHeader {
-    color: black;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 100px;
-    margin-top: 10px;
-    text-shadow: 4px 4px 4px grey, -4px 4px 4px grey, 4px 4px 4px grey, -4px 4px 4px grey;
-}
-
-#mainHeader:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-    border-bottom: 20px double rgba(255, 255, 255, 0.5);
-}
-
-
+/*A Handy Display None is Always Useful! =D*/
 .displayNone {
     display: none;
 }
 
+/*Containers*/
+/*=============================*/
 .dl-wrapper {
     text-align: center;
 }
@@ -86,15 +34,46 @@ body {
     margin: auto;
 }
 
-.navbar {
-    min-width: 100%;
+.changeColor {
+    background: black;
+}
+
+/*Navbar Styles*/
+/*=============================*/
+
+header {
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.9); 
 }
 
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 75px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*h-font is for styling the Icon in the Navbar*/
 .h-font {
     color: black;
 }
 
+/*Footer Styles*/
+/*=============================*/
 footer {
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
@@ -102,10 +81,170 @@ footer {
     width: 100%;
     height: 40px;
     line-height: 40px;
+    text-align: center;
     /*vertically centers */
 }
 
 .footerText {
     color: black;
     font-size: 12px;
+}
+
+/*Image Styles*/
+/*=============================*/
+.artPic {
+    height: 250px;
+    width: 250px; 
+    margin: 10px; 
+    margin-left: 20px; 
+    border-width: 10px;
+    border-style: ridge;
+    border-color: rgb(255, 255, 255); 
+    box-shadow: 10px 10px 5px grey;
+}
+
+.artPic:hover {
+    opacity: 0.7;
+    cursor: pointer;
+   
+}
+
+/*Grid Set Up*/
+/*=============================*/
+.grid-1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  object-fit: cover;
+}
+
+/*Header Styling*/
+/*=============================*/
+#mainHeader {
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    margin-top: 10px;
+    text-shadow: 4px 4px 4px grey, -4px 4px 4px grey, 4px 4px 4px grey, -4px 4px 4px grey;
+    text-align: center;
+}
+/*This Style Adds A Line Under The Header*/
+#mainHeader:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border-bottom: 20px double rgba(255, 255, 255, 0.5);
+}
+
+/*Media Query Styles*/
+/*=============================*/
+@media(min-width: 1600px) {
+    .grid-1 {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 60px;
+    }
+}
+
+@media(max-width: 508px) {
+    #mainHeader {
+        font-size: 60px;
+        margin-top: 5px;
+        text-shadow: 2px 2px 2px grey, -2px 2px 2px grey, 2px 2px 2px grey, -2px 2px 2px grey;
+    }
+    
+    #mainHeader:after {
+        width: 75%;
+        border-bottom: 10px double black;
+    }
+
+    .artPic {
+        height: 125px;
+        width: 125px; 
+        margin: auto;
+        border-width: 5px;
+        border-style: ridge;
+    }
+
+    .grid-1 {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 55px;
+    }
+}
+
+
+/*Modal Styles*/
+/*=============================*/  
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+  
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
