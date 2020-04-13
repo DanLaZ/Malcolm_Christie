@@ -31,10 +31,22 @@
         </nav>
    </header>
 
-  <section>
+   <section class="sheet">
+                
+        <form id="email-me" action="assets/php/contactform.php" method="post">
+            <label for="fname">Email Me</label>
+            <input type="text" id="f-name" name="name" placeholder="Full Name">
+            <!-- <label for="fname">Email</label> -->
+            <input type="text" id="f-email" name="mail" placeholder="Your Email">
+            <!-- <label for="fname">Subject</label> -->
+            <input type="text" id="f-email" name="subject" placeholder="Subject">
+            <!-- <label for="fname">Message</label> -->
+            <textarea id="f-message" name="message" placeholder="Message"></textarea>
+                        
+            <button class="portfolio-btn" id="f-send" type="submit" name="submit">Send</button>
+        </form>
 
-    
-  </section>
+    </section>
 
   <!-- Footer -->
   <footer>

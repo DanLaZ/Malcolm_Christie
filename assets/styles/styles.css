@@ -72,6 +72,41 @@ header {
     color: black;
 }
 
+/*Contact Form Styles*/
+/*=============================*/
+form {
+    padding: 10px 20px;    
+}
+
+form label {
+    font-size: 18px;
+}
+
+form #f-name, #f-email, #f-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+}
+
+form #f-name, #f-email {
+    width: 400px;
+    height: 50px;
+}
+
+
+form #f-message {
+    resize: none;
+    width: 400px;
+    height: 150px;
+}
+
+form #f-send {
+    width: 125px;
+    height: 60px;
+    
+}
+
 /*Footer Styles*/
 /*=============================*/
 footer {
